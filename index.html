@@ -19,16 +19,12 @@
 
     <!-- Music Player -->
     <div class="music-player">
-        <iframe id="bgMusic" 
-                style="display: none;"
-                width="100%" 
-                height="50" 
-                src="https://www.youtube.com/embed/E_zXy3ZOMTM?autoplay=0" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
-        <button id="playBtn" class="play-btn">🎵 Play Paradise - Chase Atlantic</button>
+        <audio id="bgMusic">
+            <source src="https://rr1---sn-q4fl6nly.googlevideo.com/videoplayback?expire=1725521400&ei=test&ip=1.1.1.1&id=o-AH&itag=251&source=youtube&requiressl=yes&mh=8u&mm=31&mn=sn-q4fl6nly&ms=au&mv=m&mvi=1&pl=24&initcwndbps=1275000&rn=0&rbuf=0&vprv=1" type="audio/webm">
+            Your browser does not support the audio element.
+        </audio>
+        <a href="https://youtu.be/E_zXy3ZOMTM" target="_blank" class="play-btn">🎵 Play Paradise - Chase Atlantic on YouTube</a>
+        <button id="playBtn" class="play-btn" style="margin-left: 10px;">🎵 Try Local Player</button>
     </div>
 
     <!-- Main Content -->
