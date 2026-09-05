@@ -353,6 +353,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
@@ -391,6 +392,42 @@ body {
     }
 }
 
+/* Birthday Section */
+.birthday-section {
+    margin-top: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+.birthday-photo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid rgba(216, 150, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(155, 93, 229, 0.4);
+    margin-bottom: 20px;
+    animation: photoGlow 2s ease-in-out infinite;
+}
+
+@keyframes photoGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px rgba(216, 150, 255, 0.3));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(216, 150, 255, 0.6));
+    }
+}
+
+.birthday-title {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e0aaff, #d896ff, #c77dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slideIn 1.2s ease-out;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .card {
@@ -415,5 +452,13 @@ body {
 
     .interactive-flower {
         font-size: 32px;
+    }
+
+    .birthday-photo {
+        max-width: 250px;
+    }
+
+    .birthday-title {
+        font-size: 22px;
     }
 }
