@@ -19,10 +19,15 @@
 
     <!-- Music Player -->
     <div class="music-player">
-        <audio id="bgMusic" loop>
-            <source src="https://open.spotify.com/track/1301WleyT98MSxVHnAlFP5" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <iframe id="bgMusic" 
+                style="display: none;"
+                width="100%" 
+                height="50" 
+                src="https://www.youtube.com/embed/E_zXy3ZOMTM?autoplay=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
         <button id="playBtn" class="play-btn">🎵 Play Paradise - Chase Atlantic</button>
     </div>
 
